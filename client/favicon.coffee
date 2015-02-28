@@ -1,3 +1,10 @@
+###
+ * Federated Wiki : Favicon Plugin
+ *
+ * Licensed under the MIT license.
+ * https://github.com/fedwiki/wiki-plugin-favicon/blob/master/LICENSE.txt
+###
+
 # ** favicon.coffee **
 # This is a brute force port of Ward's favicon.rb,
 # and could do with some refactoring by someone
@@ -54,4 +61,3 @@ window.plugins.favicon =
     $.post('/favicon.png', {image: fav}, (data) ->
       console.log data
     )
-
