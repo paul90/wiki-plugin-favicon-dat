@@ -58,6 +58,15 @@ window.plugins.favicon =
     fav = canvas.toDataURL()
     $('#favicon').attr('href', fav)
     $('.favicon').attr('src', fav)
-    $.post('/favicon.png', {image: fav}, (data) ->
-      console.log data
-    )
+
+    pageFlagPath = "/wiki/favicon.png"
+    siteFavPath = "/favicon.png"
+    fileData = fav.replace(///^data:image/png;base64,///, "")
+    await wiki.archive.writeFile(pageFlagPath, fileData, {encoding: 'base64'})
+    .then (err) ->
+      if err
+        console.log "error writing favicon to #{pageFlagPath}, ", err
+    await wiki.archive.writeFile(siteFavPath, fileData, {encoding: 'base64'})
+    .then (err) ->
+      if err
+        console.log "error writing favicon to #{siteFavPath}, ", err
