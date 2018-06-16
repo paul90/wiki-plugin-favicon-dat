@@ -1,7 +1,7 @@
 {
-  "name": "wiki-plugin-favicon",
+  "name": "@paul90/wiki-plugin-favicon",
   "version": "0.2.2",
-  "description": "Federated Wiki - Favicon Plug-in",
+  "description": "Federated Wiki - Favicon Plug-in (dat variant)",
   "keywords": [
     "wiki",
     "federated wiki",
@@ -28,20 +28,20 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "grunt": "~0.4.x",
-    "grunt-contrib-coffee": "~0.13",
-    "grunt-contrib-watch": "~0.6",
-    "grunt-git-authors": "~3"
+    "grunt": "^1.0.3",
+    "grunt-contrib-coffee": "^2.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-git-authors": "^3.2.0"
   },
   "licenses": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/fedwiki/wiki-plugin-favicon.git"
+    "url": "https://github.com/paul90/wiki-plugin-favicon-dat.git"
   },
   "bugs": {
-    "url": "https://github.com/fedwiki/wiki-plugin-favicon/issues"
+    "url": "https://github.com/paul90/wiki-plugin-favicon-dat/issues"
   },
   "engines": {
-    "node": ">=0.10"
+    "node": ">=8.11.3"
   }
 }
